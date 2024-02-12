@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, avoid_unnecessary_containers, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, avoid_unnecessary_containers, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -41,12 +41,25 @@ class _HomeLoadingState extends State<HomeLoading> {
             SizedBox(height: 30),
             Container(
               alignment: Alignment.center,
-              child: Text(
-                'RUN.',
-                style: TextStyle(
-                  fontSize: 64,
-                  fontWeight: FontWeight.bold,
-                ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'RUN',
+                    style: TextStyle(
+                      fontSize: 64,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    '.',
+                    style: TextStyle(
+                      fontSize: 64,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(66, 133, 244, 1),
+                    ),
+                  ),
+                ],
               ),
             ),
             // CircleAvatar(

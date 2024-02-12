@@ -33,7 +33,7 @@ class _OnBoardingState extends State<OnBoarding> {
                       Text(
                         'RUN.',
                         style: TextStyle(
-                          fontSize: 23,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -45,7 +45,7 @@ class _OnBoardingState extends State<OnBoarding> {
                         child: Text(
                           'Your smart and personal fitness tracker.',
                           style: TextStyle(
-                            fontSize: 26,
+                            fontSize: 30,
                             fontWeight: FontWeight.bold,
                           ),
                         ),

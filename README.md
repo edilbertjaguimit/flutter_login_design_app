@@ -1,6 +1,6 @@
 # flutter_login_design_app
 
-A new Flutter project.
+GDSC Figma Design for Loading Screen, Onboarding, and Login
 
 ## Getting Started
 

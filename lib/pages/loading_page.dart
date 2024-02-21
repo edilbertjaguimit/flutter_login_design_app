@@ -42,7 +42,8 @@ class _HomeLoadingState extends State<HomeLoading> {
             Container(
               alignment: Alignment.center,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                // mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
                     'RUN',

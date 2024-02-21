@@ -1,6 +1,7 @@
-// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
+import 'package:flutter_login_design_app/pages/signup.dart';
 
 class OnBoarding extends StatefulWidget {
   OnBoarding({super.key});
@@ -91,7 +92,15 @@ class _OnBoardingState extends State<OnBoarding> {
                       Expanded(
                         child: ElevatedButton(
                           onPressed: () {
-                            Navigator.pushNamed(context, '/login');
+                            // Navigator.pushNamed(context, '/signUp');
+
+                            // Another option for navigation
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => SignUp(),
+                              ),
+                            );
                           },
                           style: ButtonStyle(
                             backgroundColor:
